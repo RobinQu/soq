@@ -1,0 +1,20 @@
+{
+  "author": "Robin Qu <long.qul@aliyun-inc.com> (http://robinqu.me/)",
+  "name": "soq",
+  "description": "Simple Object Query Interface for JSON Array",
+  "version": "0.0.1",
+  "repository": {
+    "url": ""
+  },
+  "engines": {
+    "node": "~0.6.10"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jessie": "*",
+    "benchmark": "*"
+  },
+  "optionalDependencies": {
+    "pegjs": "*"
+  }
+}

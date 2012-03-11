@@ -3,8 +3,10 @@
   "name": "soq",
   "description": "Simple Object Query Interface for JSON Array",
   "version": "0.0.1",
+  "keywords": "query, store, json, array, db",
   "repository": {
-    "url": ""
+    "url": "https://github.com/RobinQu/soq",
+    "type": "git"
   },
   "engines": {
     "node": "~0.6.10"

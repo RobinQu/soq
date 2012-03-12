@@ -45,7 +45,15 @@ numericValue
   = n:(ws? number ws?) { return n[1]; }
 
 reservedWords
-  = "NULL" / "null" / "undefined" / "false" / "true"
+  = r:("NULL" / "null" / "undefined" / "false" / "true") {
+    var values = {
+      "NULL": null,
+      "undefined": undefined,
+      "false": false,
+      "true": true
+    };
+    return values[r];
+  }
 
 variable
   = v:("{" string "}") { return v.join(""); }

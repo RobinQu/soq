@@ -86,7 +86,10 @@ More examples can be found at */spec/*
 	* Data source support for store
 	* Group conditions
 	* Improving performance of Collection internal
-	* Better support for reserved words
+
+##Changes
+  * 2012-3-12 16:24
+    * Better support for reserved words
 	
 ##Contacts
 You can find me:

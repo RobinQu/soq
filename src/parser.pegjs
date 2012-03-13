@@ -8,11 +8,8 @@ case
   = c:(condition? query) { c[1].condition = c[0]? c[0] : "*"; return c[1]; }
   
 query
-  = q:(ws? key ws? operator ws? value ws?) { return {key: q[1], value: q[5], operator: q[3] }; }
-
-quote
-  = "\'" / "\""
-
+ = q:(ws? key ws? operator ws? value ws?) { return {key: q[1], value: q[5], operator: q[3] }; }
+ 
 operator
   = "=" 
   / "!="
@@ -57,6 +54,15 @@ reservedWords
 
 variable
   = v:("{" string "}") { return v.join(""); }
+
+leftParenthesis
+  = "("
+
+rightParenthesis
+  = ")"
+
+quote
+  = "\'" / "\""
 
 AND
   = a:("and" / "&&" / "AND") { return a.toUpperCase(); }

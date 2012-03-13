@@ -1,12 +1,18 @@
 start
-  = statement
+  = disjunction
+
+disjunction
+ = d:(conjunction OR disjunction) { return { left: d[0], logic: d[1], right: d[2] }; }
+ / conjunction
+  
+conjunction
+ = c:(statement AND conjunction) { return { left: c[0], logic: c[1], right: c[2] }; }
+ / statement
 
 statement
-  = case+
-  
-case
-  = c:(condition? query) { c[1].condition = c[0]? c[0] : "*"; return c[1]; }
-  
+  = query
+  / s:( ws? "(" ws? disjunction ws? ")" ws? ) { return s[3]; }
+
 query
  = q:(ws? key ws? operator ws? value ws?) { return {key: q[1], value: q[5], operator: q[3] }; }
  
@@ -54,12 +60,6 @@ reservedWords
 
 variable
   = v:("{" string "}") { return v.join(""); }
-
-leftParenthesis
-  = "("
-
-rightParenthesis
-  = ")"
 
 quote
   = "\'" / "\""

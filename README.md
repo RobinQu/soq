@@ -84,13 +84,14 @@ More examples can be found at */spec/*
 ##TODO
 
 * Data source support for store
-* Group conditions
 * Improving performance of Collection internal
 * Improving traversal of logic tree by reducing the context gradually
 
 ##Changes
 * 2012-3-12 16:24
-  * Better support for reserved words
+	* Better support for reserved words
+* 2012-3-14 21:50
+	* Group conditions
 	
 ##Contacts
 You can find me:

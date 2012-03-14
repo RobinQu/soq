@@ -15,24 +15,24 @@ We accept a simple string a query conditions. And at least you shuold tell the q
 	
 In fact, the query interface have learned a bunch of condition types:
 
-	* =
-	* >=
-	* >
-	* <=
-	* <
-	* !=
-	* BEGINS_WITH
-	* ENDS_WITH
-	* MATCH
-	* TYPE_IS
+* =
+* \>=
+* \>
+* \<=
+* \<
+* !=
+* BEGINS_WITH
+* ENDS_WITH
+* MATCH
+* TYPE_IS
 
 And these condition operators are straightfoward.
 
 It also should be noted that the value of a condition can be:
 
-	* Numbers: 1,2,3,0.5,1.4…
-	* Strings: "Hello", "Nice",…
-	* Reserved Words: true, false, null, undefined
+* Numbers: 1,2,3,0.5,1.4…
+* Strings: "Hello", "Nice",…
+* Reserved Words: true, false, null, undefined
 	
 What's more you can pass mutiple conditions:
 
@@ -83,18 +83,19 @@ More examples can be found at */spec/*
 	
 ##TODO
 
-	* Data source support for store
-	* Group conditions
-	* Improving performance of Collection internal
+* Data source support for store
+* Group conditions
+* Improving performance of Collection internal
+* Improving traversal of logic tree by reducing the context gradually
 
 ##Changes
-  * 2012-3-12 16:24
-    * Better support for reserved words
+* 2012-3-12 16:24
+  * Better support for reserved words
 	
 ##Contacts
 You can find me:
 
-	* http://robinqu.me/
-	* http://twitter.com/robinqu
-	* http://weibo.com/robinqu
+* http://robinqu.me/
+* http://twitter.com/robinqu
+* http://weibo.com/robinqu
 	

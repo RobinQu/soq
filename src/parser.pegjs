@@ -65,10 +65,10 @@ quote
   = "\'" / "\""
 
 AND
-  = a:("and" / "&&" / "AND") { return a.toUpperCase(); }
+  = a:("and" / "&&" / "AND") { return "AND"; }
   
 OR
-  = o:("or" / "||" / "OR") { return o.toUpperCase(); }
+  = o:("or" / "||" / "OR") { return "OR"; }
 
 ws
   = " "+ { return ""; }
